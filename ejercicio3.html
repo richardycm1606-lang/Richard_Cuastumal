@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 3</title>
+    <link rel="stylesheet" href="./css/styles3.css">
+</head>
+
+<body>
+    <main class="form-page">
+        <section class="form-section">
+            <div class="form-container">
+                <header class="form-header">
+                    <h1>Encuesta</h1>
+                    <p>Queremops conocer su opinion.</p>
+                </header>
+
+                <form action="#" method="post">
+
+                    <div class="form-field">
+                        <h2 for="satisfaccion">¿Qué tan satisfecho está con nuestro servicio?</h2>
+                        <fieldset>
+                            <label>
+                                <input type="radio" name="satisfaccion" value="muy_satisfecho">
+                                Muy satisfecho
+                            </label>
+
+                            <label>
+                                <input type="radio" name="satisfaccion" value="satisfecho">
+                                Satisfecho
+                            </label>
+
+                            <label>
+                                <input type="radio" name="satisfaccion" value="neutral">
+                                Neutral
+                            </label>
+
+                            <label>
+                                <input type="radio" name="satisfaccion" value="insatisfecho">
+                                Insatisfecho
+
+                            </label>
+                        </fieldset>
+
+                    </div>
+
+                    <div class="form-field">
+                        <h2 for="servicios">¿Qué servicios ha utilizado?</h2>
+                        <fieldset>
+                            <label>
+                                <input type="checkbox" name="servicios" value="servicio_web">
+                                Servicio web
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="servicios" value="servicio_movil">
+                                Servicio móvil
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="servicios" value="soporte_tecnico">
+                                Soporte técnico
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="form-field">
+                        <h2 for="utilidad">¿Qué tan facil fue usar nuestros servicios?</h2>
+                        <input type="range" id="utilidad" name="utilidad" min="1" max="10" value="5">
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</html>

@@ -1,0 +1,95 @@
+:root {
+    --primary: #1f2937;
+    --primary-hover: #111827;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #d1d5db;
+    --background: #ffffff;
+    --backgrownd-soft: #f3f4f6;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    --container: 850px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--backgrownd-soft);
+    color: var(--text);
+}
+
+.form-page {
+    min-height: 100vh;
+}
+
+.form-section {
+    padding: 60px 20px;
+}
+
+.form-container {
+    width: min(100%, var(--container));
+    margin-inline: auto;
+    padding: 40px;
+    background: var(--background);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+.form-header {
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.form-container h1 {
+    margin: 0;
+    font-size: 40px;
+    color: var(--primary);
+}
+
+.form-container h2 {
+    font-size: 22px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+button {
+    grid-column: 1 / -1;
+    padding: 13px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--primary-hover);
+}

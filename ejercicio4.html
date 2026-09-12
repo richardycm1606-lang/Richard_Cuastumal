@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+    <link rel="stylesheet" href="./css/styles4.css">
+</head>
+<body>
+    <main class="form-page">
+        <section class="form-section">
+            <div class="form-container">
+                <header class="form-header">
+                    <h1>Solicitud de empleo</h1>
+                    <p>Complete con sus datos personales</p>
+                </header>
+
+                <form action="#" method="post">
+
+                    <div class="form-field">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="cargo">Cargo al que desea aplicar</label>
+                        <select id="cargo" name="cargo" required>
+                            <option value="">Seleccione un cargo</option>
+                            <option value="desarrollador">Desarrollador</option>
+                            <option value="diseñador">Diseñador</option>
+                            <option value="gerente">Gerente</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="archivo">Adjunte su CV:
+                        <input type="file" id="archivo" name="archivo" accept=".pdf,.doc,.docx" required>
+                        </label>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

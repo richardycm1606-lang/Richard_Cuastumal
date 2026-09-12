@@ -1,0 +1,90 @@
+:root {
+    --primary: #0d5bea;
+    --primary-hover: #084cc7;
+    --primary-light: #edf4ff;
+    --navy: #031d66;
+    --text: #031d66;
+    --muted: #0e4fdb;
+    --border: #dfe5ee;
+    --background: #ffffff;
+    --backgrownd-soft: #f7f9fc;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+    --shadow: 0 24px 70px rgba(15, 40, 80, 0.10);
+    --container: 950px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color-scheme: light;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--backgrownd-soft);
+    color: var(--text);
+}
+
+.form-page {
+    min-height: 100vh;
+}
+
+.form-section {
+    padding: 70px 20px;
+}
+
+.form-container {
+    width: min(100%, var(--container));
+    margin-inline: auto;
+    padding: 42px;
+    background: var(--background);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+.form-container h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.form-container h2 {
+    margin: 0;
+    color: var(--navy);
+    font-size: 25px;
+    line-height: 2;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    font-weight: bold;
+}
+
+.form-field input {
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+button {
+    padding: 12px 25px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--primary-hover);
+}
