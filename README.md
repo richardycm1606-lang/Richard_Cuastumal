@@ -1,2 +1,2 @@
 # Richard_Cuastumal
-repositorio de taller 2
+repositorio de talleres
